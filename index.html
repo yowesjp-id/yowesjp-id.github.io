@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YOWESJP Official</title>
-  <meta name="description" content="YOWESJP Official – Semangat Muda, Energi Tanpa Batas.">
+  <meta name="description" content="YOWESJP Official – Semangat Muda, Energi Tanpa Batas ⚡">
   <link rel="icon" href="YOWESJP.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -26,6 +27,8 @@
       width: 120px;
       border-radius: 50%;
       box-shadow: 0 0 15px rgba(255,255,255,0.4);
+      max-width: 80%;
+      height: auto;
     }
 
     header h1 {
@@ -34,56 +37,71 @@
     }
 
     header p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       opacity: 0.95;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #007acc;
-      padding: 10px 0;
-      gap: 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-
-    nav a:hover {
-      color: #b3e0ff;
-      transform: scale(1.05);
     }
 
     main {
       text-align: center;
-      padding: 50px 20px;
+      padding: 40px 20px;
     }
 
     main h2 {
       color: #009dff;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       font-size: 1.8em;
     }
 
-    .links a {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 10px;
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
       background: #009dff;
       color: white;
       border-radius: 10px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       transition: 0.2s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .links a:hover {
+    .social-links a:hover {
       background: #007acc;
       transform: scale(1.05);
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .action-buttons a {
+      padding: 14px 26px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #00b3ff, #0066ff);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: 0.25s;
+    }
+
+    .action-buttons a:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #008cff, #004ecb);
     }
 
     footer {
@@ -91,18 +109,41 @@
       color: white;
       text-align: center;
       padding: 25px 15px;
-      margin-top: 50px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 10px 0;
     }
 
     footer a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
-      font-size: 1.4em;
+      margin: 0 8px;
+      font-size: 1.3em;
+      transition: 0.2s;
     }
 
     footer a:hover {
       opacity: 0.8;
+    }
+
+    /* RESPONSIVE UNTUK HP */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      .social-links a {
+        width: 90%;
+        font-size: 1em;
+        justify-content: center;
+      }
+      .action-buttons a {
+        width: 80%;
+      }
     }
   </style>
 </head>
@@ -114,32 +155,40 @@
     <p>Semangat Muda, Energi Tanpa Batas ⚡</p>
   </header>
 
-  <nav>
-    <a href="index.html">🏠 Beranda</a>
-    <a href="about.html">ℹ️ Tentang</a>
-    <a href="contact.html">📞 Kontak</a>
-  </nav>
-
   <main>
-    <h2>Selamat Datang di YOWESJP Official</h2>
-    <p>Kami hadir untuk menginspirasi generasi muda lewat kreativitas, kolaborasi, dan energi positif. Yuk bergabung bersama kami!</p>
+    <h2>Temukan YOWESJP di Semua Platform Sosial</h2>
+    <p>Klik salah satu di bawah ini (sementara semua ke halaman utama)</p>
 
-    <div class="https://yowesjp-vip.github.io/GRATIS15000">
-      <a href="https://magic.ly/YOWESJP" target="_blank">🌐 Magic.ly</a>
-      <a href="https://heylink.me/YOWESJP" target="_blank">🔗 Heylink</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000" target="_blank">📷 Instagram</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000" target="_blank">🎵 TikTok</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000" target="_blank">▶️ YouTube</a>
+    <div class="social-links">
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-globe"></i> Website Resmi</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-telegram"></i> Telegram</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-discord"></i> Discord</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-bag-shopping"></i> Shopee</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-store"></i> Tokopedia</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-users"></i> Komunitas</a>
+    </div>
+
+    <div class="action-buttons">
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-user-plus"></i> Daftar</a>
     </div>
   </main>
 
   <footer>
-    <p>Ikuti kami:</p>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000" target="_blank">📷</a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000" target="_blank">🎵</a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000" target="_blank">▶️</a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000" target="_blank">📘</a>
-    <p style="margin-top:10px; font-size:0.9em;">© 2025 YOWESJP Official. All rights reserved.</p>
+    <p>© 2025 YOWESJP Official. All Rights Reserved.</p>
+    <p>Temui kami di semua media sosial:</p>
+    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-telegram"></i></a>
   </footer>
 
 </body>
