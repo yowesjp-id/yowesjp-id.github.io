@@ -4,144 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YOWESJP Official</title>
-  <meta name="description" content="YOWESJP Official – Semangat Muda, Energi Tanpa Batas ⚡">
-  <link rel="icon" href="YOWESJP.jpeg" type="image/jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8fbff;
-      color: #222;
+      font-family: "Poppins", sans-serif;
       margin: 0;
       padding: 0;
+      text-align: center;
+      background: linear-gradient(180deg, #b3e0ff, #ffffff);
+      color: #003366;
     }
 
     header {
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #009dff, #42b0ff);
-      color: white;
+      padding: 20px;
     }
 
     header img {
       width: 120px;
-      border-radius: 50%;
-      box-shadow: 0 0 15px rgba(255,255,255,0.4);
-      max-width: 80%;
       height: auto;
+      border-radius: 20px;
     }
 
-    header h1 {
-      margin: 15px 0 5px;
-      font-size: 2.3em;
-    }
-
-    header p {
-      font-size: 1.1em;
-      opacity: 0.95;
-    }
-
-    main {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    main h2 {
-      color: #009dff;
-      margin-bottom: 20px;
+    h1 {
+      margin-top: 10px;
       font-size: 1.8em;
+      color: #007acc;
     }
 
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 20px;
+    .button-section {
+      text-align: center;
+      padding: 30px 10px;
     }
 
-    .social-links a {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 18px;
-      background: #009dff;
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    .auth-buttons {
+      margin-bottom: 25px;
     }
 
-    .social-links a:hover {
+    .btn {
+      display: inline-block;
       background: #007acc;
+      color: white;
+      padding: 12px 22px;
+      margin: 5px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #005fa3;
       transform: scale(1.05);
     }
 
-    .action-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 35px;
-    }
-
-    .action-buttons a {
-      padding: 14px 26px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #00b3ff, #0066ff);
-      color: white;
+    .social-links a {
+      display: inline-block;
+      margin: 8px 10px;
+      color: #007acc;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 1.05em;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-      transition: 0.25s;
-    }
-
-    .action-buttons a:hover {
-      transform: scale(1.08);
-      background: linear-gradient(135deg, #008cff, #004ecb);
-    }
-
-    footer {
-      background: #009dff;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 60px;
-    }
-
-    footer p {
-      margin: 10px 0;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-      font-size: 1.3em;
+      font-size: 1.1em;
       transition: 0.2s;
     }
 
-    footer a:hover {
-      opacity: 0.8;
+    .social-links a:hover {
+      color: #005fa3;
+      transform: scale(1.05);
     }
 
-    /* RESPONSIVE UNTUK HP */
+    footer {
+      background: #007acc;
+      color: white;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+
+    /* Responsif untuk HP */
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8em;
-      }
-      header p {
-        font-size: 1em;
-      }
-      .social-links a {
-        width: 90%;
-        font-size: 1em;
-        justify-content: center;
-      }
-      .action-buttons a {
+      .auth-buttons a, .social-links a {
+        display: block;
+        margin: 10px auto;
         width: 80%;
       }
     }
@@ -152,43 +94,29 @@
   <header>
     <img src="YOWESJP.jpeg" alt="Logo YOWESJP">
     <h1>YOWESJP Official</h1>
-    <p>Semangat Muda, Energi Tanpa Batas ⚡</p>
   </header>
 
   <main>
-    <h2>Temukan YOWESJP di Semua Platform Sosial</h2>
-    <p>Klik salah satu di bawah ini (sementara semua ke halaman utama)</p>
+    <section class="button-section">
+      <div class="auth-buttons">
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/" class="btn login"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/" class="btn register"><i class="fas fa-user-plus"></i> Daftar</a>
+      </div>
 
-    <div class="social-links">
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-globe"></i> Website Resmi</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-instagram"></i> Instagram</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-tiktok"></i> TikTok</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-youtube"></i> YouTube</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-facebook"></i> Facebook</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-telegram"></i> Telegram</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-discord"></i> Discord</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-bag-shopping"></i> Shopee</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-store"></i> Tokopedia</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-users"></i> Komunitas</a>
-    </div>
-
-    <div class="action-buttons">
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
-      <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-solid fa-user-plus"></i> Daftar</a>
-    </div>
+      <div class="social-links">
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fab fa-x-twitter"></i> X / Twitter</a>
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fab fa-telegram"></i> Telegram</a>
+        <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 YOWESJP Official. All Rights Reserved.</p>
-    <p>Temui kami di semua media sosial:</p>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-whatsapp"></i></a>
-    <a href="https://yowesjp-vip.github.io/GRATIS15000/"><i class="fa-brands fa-telegram"></i></a>
+    © 2025 YOWESJP Official. All rights reserved.
   </footer>
 
 </body>
